@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
-body{
+
+body {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -13,39 +15,61 @@ body{
     align-items: center;
     background: linear-gradient(45deg, #0a0a0a, #3a4452);
 }
-.calculator{
+
+.calculator {
     border: 1px solid #717377;
     padding: 20px;
-    width: 52%;
+    width: 271px;
     border-radius: 22px;
     background-color: #010101;
     box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
 }
 
-input{
+#inp {
     width: 240px;
     border: none;
     padding: 23px;
-    margin: 10px;
-    margin-bottom: 40px;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* margin-bottom: 0px; */
     background: transparent;
     box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
     font-size: 40px;
     text-align: right;
     cursor: pointer;
-}
-
-input::placeholder{
     color: #ffffff;
 }
 
-.hr{
-   padding: 10px 0 ; 
-   opacity: 20%;
+#inp1 {
+    width: 240px;
+    border: none;
+    padding: 4px;
+    /* margin-bottom: 0px; */
+    background: transparent;
+    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
+    font-size: 25px;
+    text-align: right;
+    cursor: pointer;
+    color: #8c8b8b;
 }
-button{
-    border:none;
-    width: auto;
+
+#inp1::placeholder {
+    color: #ffffff;
+}
+
+#inp::placeholder {
+    color: #ffffff;
+}
+
+.hr {
+    padding: 10px 0;
+    opacity: 20%;
+}
+
+button {
+    border: none;
+    width: 50px;
     height: 50px;
     margin: 2px;
     margin-top: 3px;
@@ -58,29 +82,40 @@ button{
     background-color: #171719;
     cursor: pointer;
 }
-button:hover{
+
+button i h5 {
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
     background-color: #444446;
     font-size: 16px;
-    
+
 }
-.eql{
+
+.eql {
     background-color: #318607;
 }
-.eql:hover{
+
+.eql:hover {
     background-color: #5a9c38;
 }
-.oper{
+
+.oper {
     color: #318607;
     background-color: #2d2d2f;
 }
-.c{
+
+.c {
     color: #f2716c;
     background-color: #2d2d2f;
 
 }
 
-.extra button{
-    border:none;
+.extra button {
+    border: none;
     width: 30px;
     height: 30px;
     margin: 5px;
@@ -91,6 +126,7 @@ button:hover{
     /* box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1); */
     /* background-color: #171719; */
 }
+
 /* @keyframe hvrbtn{
     from{
         font-size:18px;
@@ -99,7 +135,7 @@ button:hover{
         font-size:14px;
     }
 } */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .calculator {
 
     }
@@ -143,4 +179,4 @@ button:hover{
     .extra button {
 
     }
-}
+} */
