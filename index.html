@@ -9,45 +9,47 @@
 </head>
 <body>
     <div class="calculator">
-        <input type="text" placeholder="0">
-        <div class="extra">
-            <button><i class="fa-solid fa-clock"></i></button>
-            <button><i class="fa-solid fa-ruler"></i></button>
-            <button><i class="fa-solid fa-calculator"></i></button>
+        <input id="inp" type="text" placeholder="0">
+        <input id="inp1" type="text" >
+        <div id="ex" class="extra">
+            <button id="clk"><i class="fa-solid fa-clock"></i></button>
+            <button id="rul"><i class="fa-solid fa-ruler"></i></button>
+            <button id="cal"><i class="fa-solid fa-calculator"></i></button>
         </div>
         <div class="hr">
             <hr>
         </div>
-        <div>
-            <button class="c"><i class="fa-solid fa-c"></i></button>
-            <button class="oper"><i class="fa-solid fa-delete-left"></i></button>
-            <button class="oper"><i class="fa-solid fa-percent"></i></button>
-            <button class="oper"><i class="fa-solid fa-divide"></i></button>
+        <div id="1">
+            <button id="c" class="c">C</button>
+            <button id="del" class="oper">DEL</button>
+            <button id="per" class="oper">%</button>
+            <button id="div" class="oper">/</button>
         </div>
-        <div>
-            <button><i class="fa-solid fa-7"></i></button>
-            <button><i class="fa-solid fa-8"></i></button>
-            <button><i class="fa-solid fa-9"></i></button>
-            <button class="oper"><i class="fa-solid fa-xmark"></i></button>
+        <div id="2">
+            <button id="7">7</button>
+            <button id="8">8</button>
+            <button id="9">9</button>
+            <button id="x" class="oper">*</button>
         </div>
-        <div>
-            <button><i class="fa-solid fa-4"></i></button>
-            <button><i class="fa-solid fa-5"></i></button>
-            <button><i class="fa-solid fa-6"></i></button>
-            <button class="oper"><i class="fa-solid fa-minus"></i></button>
+        <div id="3">
+            <button id="4">4</button>
+            <button id="5">5</button>
+            <button id="6">6</button>
+            <button id="min" class="oper">-</button>
         </div>
-        <div>
-            <button><i class="fa-solid fa-1"></i></button>
-            <button><i class="fa-solid fa-2"></i></button>
-            <button><i class="fa-solid fa-3"></i></button>
-            <button class="oper"><i class="fa-solid fa-plus"></i></button>
+        <div id="4">
+            <button id="1">1</button>
+            <button id="2">2</button>
+            <button id="3">3</button>
+            <button id="plus" class="oper">+</button>
         </div>
-        <div>
-            <button><i class="fa-solid fa-0"></i><i class="fa-solid fa-0"></i></button>
-            <button><i class="fa-solid fa-0"></i></button>
-            <button><i style="font-size: 4px;" class="fa-solid fa-circle"></i></button>
-            <button class="eql"><i class="fa-solid fa-equals"></i></button>
+        <div id="5">
+            <button id="00">00</button>
+            <button id="0">0</button>
+            <button id="cir">.</button>
+            <button id="=" class="eql">=</button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
